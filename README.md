@@ -1,4 +1,4 @@
-# C-Study
+# C Sharp Study
 The result of C# and Oracle SQL project at academy for learning.  
 The program's concept is an online bookstore that using Oracle Database for managing products, customers and sales data.  
 Used Winform for GUI.
