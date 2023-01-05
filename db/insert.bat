@@ -1,1 +1,0 @@
-echo exit | sqlplus team4/1234@localhost @D:\db\insert_all.sql
