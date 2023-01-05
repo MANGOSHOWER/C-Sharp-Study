@@ -1,6 +1,6 @@
 # C-Study
-The result of C# and Oracle SQL project at academy for learning.
-The program's concept is an online bookstore that using Oracle Database.
+The result of C# and Oracle SQL project at academy for learning.  
+The program's concept is an online bookstore that using Oracle Database.  
 Used Winform for GUI.
   
 C#과 오라클 SQL을 활용한 프로젝트의 결과물입니다.  
