@@ -1,1 +1,0 @@
-echo exit | sqlplus team4/1234@localhost @D:\db\drop_all.sql
