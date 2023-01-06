@@ -1,0 +1,1 @@
+echo exit | sqlplus test/1234@localhost @D:\DB\insert_all.sql

@@ -1,0 +1,35 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 금요일-1월-06-2023   
+--------------------------------------------------------
+@D:\DB\TABLES\PROJ_BOOKS.sql
+@D:\DB\TABLES\PROJ_MEMBER.sql
+@D:\DB\TABLES\PROJ_NOTICE.sql
+@D:\DB\TABLES\PROJ_REV.sql
+@D:\DB\TABLES\PROJ_SALE.sql
+--@D:\DB\DATA_TABLE\PROJ_BOOKS.ldr
+--@D:\DB\DATA_TABLE\PROJ_BOOKS.ctl
+--@D:\DB\DATA_TABLE\PROJ_MEMBER.ldr
+--@D:\DB\DATA_TABLE\PROJ_MEMBER.ctl
+--@D:\DB\DATA_TABLE\PROJ_NOTICE.ldr
+--@D:\DB\DATA_TABLE\PROJ_NOTICE.ctl
+--@D:\DB\DATA_TABLE\PROJ_REV.ldr
+--@D:\DB\DATA_TABLE\PROJ_REV.ctl
+--@D:\DB\DATA_TABLE\PROJ_SALE.ldr
+--@D:\DB\DATA_TABLE\PROJ_SALE.ctl
+@D:\DB\INDEXES\SYS_C008611.sql
+@D:\DB\INDEXES\SYS_C008612.sql
+@D:\DB\INDEXES\SYS_C008613.sql
+@D:\DB\INDEXES\SYS_C008617.sql
+@D:\DB\INDEXES\SYS_C008614.sql
+@D:\DB\CONSTRAINTS\PROJ_BOOKS.sql
+@D:\DB\CONSTRAINTS\PROJ_MEMBER.sql
+@D:\DB\CONSTRAINTS\PROJ_NOTICE.sql
+@D:\DB\CONSTRAINTS\PROJ_REV.sql
+@D:\DB\CONSTRAINTS\PROJ_SALE.sql
+@D:\DB\REF_CONSTRAINTS\PROJ_REV.sql
+@D:\DB\REF_CONSTRAINTS\PROJ_SALE.sql
+$sqlldr userid= test/1234 control ='D:\DB\DATA_TABLE\PROJ_BOOKS.ctl' log ='D:\DB\DATA_TABLE\PROJ_BOOKS.log'
+$sqlldr userid= test/1234 control ='D:\DB\DATA_TABLE\PROJ_MEMBER.ctl' log ='D:\DB\DATA_TABLE\PROJ_MEMBER.log'
+$sqlldr userid= test/1234 control ='D:\DB\DATA_TABLE\PROJ_SALE.ctl' log ='D:\DB\DATA_TABLE\PROJ_SALE.log'
+$sqlldr userid= test/1234 control ='D:\DB\DATA_TABLE\PROJ_REV.ctl' log ='D:\DB\DATA_TABLE\PROJ_REV.log'
+$sqlldr userid= test/1234 control ='D:\DB\DATA_TABLE\PROJ_NOTICE.ctl' log ='D:\DB\DATA_TABLE\PROJ_NOTICE.log'
