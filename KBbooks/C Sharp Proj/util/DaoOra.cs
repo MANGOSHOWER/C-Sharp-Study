@@ -58,7 +58,7 @@ namespace KBbooks
             "(PORT=1521)))" +
             "(CONNECT_DATA=(SERVER=DEDICATED)" +
             "(SERVICE_NAME=XE)));" +
-            $"User Id=team4;Password=1234;";
+            $"User Id=test;Password=1234;";
             conn = new OracleConnection(ORA_ADDR);
             cmd = new OracleCommand();
             connectDB();
