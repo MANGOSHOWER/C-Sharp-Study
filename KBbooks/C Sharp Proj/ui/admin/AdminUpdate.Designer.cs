@@ -51,7 +51,6 @@
             this.lvPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvGenre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.viewGenre = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -291,8 +290,7 @@
             this.lvPub,
             this.lvPrice,
             this.lvDate,
-            this.lvGenre,
-            this.columnHeader1});
+            this.lvGenre});
             this.bookView.ForeColor = System.Drawing.Color.Black;
             this.bookView.FullRowSelect = true;
             this.bookView.GridLines = true;
@@ -335,7 +333,7 @@
             // lvDate
             // 
             this.lvDate.Text = "발행일";
-            this.lvDate.Width = 130;
+            this.lvDate.Width = 110;
             // 
             // lvGenre
             // 
@@ -391,15 +389,15 @@
             this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.month.FormattingEnabled = true;
             this.month.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
             "10",
             "11",
             "12"});
@@ -825,6 +823,7 @@
             this.selectBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.selectBtn.TabIndex = 198;
             this.selectBtn.TabStop = false;
+            this.selectBtn.Click += new System.EventHandler(this.selectImage_Click);
             // 
             // pic
             // 
@@ -1093,7 +1092,6 @@
         private System.Windows.Forms.PictureBox selectBtn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pic;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.TextBox viewTitle;
         private System.Windows.Forms.Label update;
         private System.Windows.Forms.PictureBox updateBtn;

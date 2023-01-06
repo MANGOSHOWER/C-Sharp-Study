@@ -152,9 +152,9 @@ namespace KBbooks.ui.admin
                 viewPrice.Text = price;
                 viewAuthor.Text = author;
                 viewPub.Text = pub;
-                month.Text = date.Substring(5, 2);
+                month.Text = int.Parse(date.Substring(5, 2)).ToString();
                 year.Text = date.Substring(0, 4);
-                day.Text = date.Substring(8, 2);
+                day.Text = int.Parse(date.Substring(8, 2)).ToString();
                 viewGenre.Text = genre;
                 originCode = code;
                 ora.getImg(pic, code);
@@ -200,11 +200,11 @@ namespace KBbooks.ui.admin
                 if (imagename != null)
                 {
                     ora.upImge(new Book(imagename), imagepath, viewCode.Text);
-                    ora.commit();
                     imagepath = null;
                     imagename = null;
                     pic.Image = null;
                 }
+                ora.commit();
                 updateListView(list);
                 MessageBox.Show("도서 정보가 수정되었습니다.");
                 pic.Image = null;
@@ -272,10 +272,13 @@ namespace KBbooks.ui.admin
                     "모든 파일(*.*)|*.*";
                 ofd.FilterIndex = 0;
                 ofd.RestoreDirectory = true;
-                ofd.ShowDialog();
-                imagepath = ofd.FileName;
-                Image img = Image.FromFile(imagepath);
-                pic.Image = img;
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    imagepath = ofd.FileName;
+                    Image img = Image.FromFile(imagepath);
+                    pic.Image = img;
+                }
+                
             }
             catch (FileNotFoundException)
             {
