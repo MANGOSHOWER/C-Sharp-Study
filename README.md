@@ -15,12 +15,13 @@ GUI 구현을 위해서 Winform을 사용했습니다.
 1. 이 프로그램을 실행하기 위해서는 오라클 데이터베이스가 반드시 설치되어 있어야 합니다.  
 2. 오라클에 사용자명 test, 비밀번호 1234로 설정되어 있으며 localhost로 접속하는 계정이 존재해야 합니다.  
 3. test 계정에 connect, resource, dba 권한이 부여되어 있어야 합니다.  
-4. 프로그램을 실행하기 위해서는 test 계정에 DB가 삽입되어 있어야 합니다. DB 폴더를 D드라이브로 옮긴 후 insert.bat을 실행하거나, SQL Plus를 이용해 불러올 수 있습니다.  
+4. 프로그램을 실행하기 위해서는 test 계정에 DB가 삽입되어 있어야 합니다. DB 폴더를 D드라이브로 옮긴 후 insert.bat을 실행하거나, SQL Plus로 insert_all.sql을 실행해 불러올 수 있습니다.  
+5. DB를 삭제하려는 경우에는 오라클에서 수동으로 테이블을 삭제하거나, DB 폴더 내의 drop.bat을 실행하면 됩니다. 또는 SQL Plus에서 drop_all.sql을 실행해도 됩니다.
   
 Caution
 1. Oracle Database must be installed to run this program.  
 2. Need a user account with Name = test, Password = 1234 and connect to localhost.  
 3. The 'test' account must be granted connect, resource, and dba privileges.  
-4. The DB must be inserted into the test account to run the program. You can move the DB folder to the D drive and run insert.bat, or use SQL Plus to load it.
+4. If you want to delete DB, you can delete the table manually from Oracle or run drop.bat within the DB folder. Or, you can run drop_all.sql on SQL Plus.
 
 2022/12/26 ~ 2023/01/06
